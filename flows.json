@@ -70,7 +70,8 @@
         "y": 40,
         "wires": [
             [
-                "918fa74303ce0827"
+                "918fa74303ce0827",
+                "0767908d755748bf"
             ]
         ]
     },
@@ -90,5 +91,19 @@
         "x": 380,
         "y": 40,
         "wires": []
+    },
+    {
+        "id": "0767908d755748bf",
+        "type": "json",
+        "z": "6feec8e04bcef45b",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 370,
+        "y": 180,
+        "wires": [
+            []
+        ]
     }
 ]
