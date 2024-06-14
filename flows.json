@@ -1,0 +1,128 @@
+[
+    {
+        "id": "6feec8e04bcef45b",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4fe80b17719e8724",
+        "type": "mqtt-broker",
+        "name": "muskrattrap@ttn",
+        "broker": "eu1.cloud.thethings.network",
+        "port": "1883",
+        "tls": "f5a2cebc5ac49db9",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "f5a2cebc5ac49db9",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": false,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "c863e9b2ec3be8ca",
+        "type": "mqtt in",
+        "z": "6feec8e04bcef45b",
+        "name": "muskrattrap@ttn",
+        "topic": "v3/muskrattrap@ttn/devices/#",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "4fe80b17719e8724",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 300,
+        "wires": [
+            [
+                "918fa74303ce0827",
+                "bea045e471fdee2c"
+            ]
+        ]
+    },
+    {
+        "id": "918fa74303ce0827",
+        "type": "debug",
+        "z": "6feec8e04bcef45b",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 470,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "bea045e471fdee2c",
+        "type": "json",
+        "z": "6feec8e04bcef45b",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": true,
+        "x": 390,
+        "y": 300,
+        "wires": [
+            [
+                "839c22f28c835ce8"
+            ]
+        ]
+    },
+    {
+        "id": "839c22f28c835ce8",
+        "type": "debug",
+        "z": "6feec8e04bcef45b",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 590,
+        "y": 300,
+        "wires": []
+    }
+]
