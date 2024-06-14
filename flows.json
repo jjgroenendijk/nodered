@@ -66,12 +66,11 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 160,
-        "y": 300,
+        "x": 200,
+        "y": 40,
         "wires": [
             [
-                "918fa74303ce0827",
-                "bea045e471fdee2c"
+                "918fa74303ce0827"
             ]
         ]
     },
@@ -79,50 +78,17 @@
         "id": "918fa74303ce0827",
         "type": "debug",
         "z": "6feec8e04bcef45b",
-        "name": "debug 1",
+        "name": "raw mqtt",
         "active": true,
         "tosidebar": true,
-        "console": true,
+        "console": false,
         "tostatus": true,
         "complete": "payload",
         "targetType": "msg",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 470,
-        "y": 200,
-        "wires": []
-    },
-    {
-        "id": "bea045e471fdee2c",
-        "type": "json",
-        "z": "6feec8e04bcef45b",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": true,
-        "x": 390,
-        "y": 300,
-        "wires": [
-            [
-                "839c22f28c835ce8"
-            ]
-        ]
-    },
-    {
-        "id": "839c22f28c835ce8",
-        "type": "debug",
-        "z": "6feec8e04bcef45b",
-        "name": "debug 2",
-        "active": true,
-        "tosidebar": true,
-        "console": true,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 590,
-        "y": 300,
+        "x": 380,
+        "y": 40,
         "wires": []
     }
 ]
